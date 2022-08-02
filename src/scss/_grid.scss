@@ -1,0 +1,36 @@
+.App {
+    max-width: 120rem;
+    min-height: 100vh;
+    background-color: var(--Grey-light-2);
+    margin: 8rem auto;
+    box-shadow: var(--Shadow-dark);
+}
+
+.header {
+    height: 7rem;
+
+    border-bottom: var(--Grey-light-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    flex: 0 0 18%
+}
+
+
+.hotel-view {
+    flex: 1;
+}
+
+.about_and_rating {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10rem;
+}

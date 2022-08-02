@@ -1,0 +1,45 @@
+@media screen and (max-width: 1400px) {
+    .App {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        flex-direction: column;
+    }
+
+
+    .sidebar {
+        & .sidebar__nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 0;
+        }
+        &__nav--link {
+
+            flex-direction: column;
+
+            a {
+                font-size: 1.6rem
+            }
+        }
+
+        .footer {
+            display: none;
+        }
+    }
+
+    .hotel-details{
+        border: 1px solid red;
+        flex-direction: column;
+
+
+        .hotel-name-stars{
+            align-self: flex-start;
+        }
+        .hotel-location-rate{
+            align-self: flex-end;
+        }
+    }
+}

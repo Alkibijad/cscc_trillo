@@ -1,0 +1,90 @@
+.header {
+
+    .logo {
+        height: 3.25rem;
+        padding: 0 1rem;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        height: 3rem;
+
+        &__input {
+            background-color: var(--Grey-light-4);
+            font-size: 1.6rem;
+            border-radius: 100px;
+            padding: 1rem 3rem;
+            border: none;
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 .5rem 1rem var(--Primary-light)
+            }
+            &:focus:invalid{
+                border: 1px solid red;
+            }
+
+        }
+
+        &__button {
+            font-size: 1.6rem;
+            margin-left: 1rem;
+            border: none;
+        }
+
+        &__button:hover {
+            color: var(--Primary);
+            transform: scale(1.5);
+            transition: all 0.3s;
+
+        }
+        &__button:focus {
+            color: var(--Primary);
+            transform: scale(1.5);
+            transition: all 0.3s;
+            outline: none;
+
+        }
+    }
+
+    .user-nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__icon-box {
+            position: relative;
+
+            span {
+                position: absolute;
+                top: -1rem;
+                left: 1.5rem;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                background-color: var(--Primary);
+                color: white;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+
+        &__user {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 5rem;
+                border-radius: 50%;
+            }
+
+            &-name {
+                font-size: 2rem;
+                padding: 0 1rem;
+            }
+        }
+
+    }
+}
