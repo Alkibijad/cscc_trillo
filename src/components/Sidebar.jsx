@@ -8,10 +8,10 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <ul className="sidebar__nav">
-        <li className="sidebar__nav--link"><AiFillHome /><a href="#">HOTEL</a></li>
-        <li className="sidebar__nav--link"><ImAirplane /><a href="#">FLIGHT</a></li>
-        <li className="sidebar__nav--link"><AiFillCar /><a href="#">CAR RENTAL</a></li>
-        <li className="sidebar__nav--link"><BsMap /><a href="#">TOURS</a></li> </ul> 
+        <li className="sidebar__nav--link"><AiFillHome /><a href="https://www.booking.com/">HOTEL</a></li>
+        <li className="sidebar__nav--link"><ImAirplane /><a href="https://www.booking.com/">FLIGHT</a></li>
+        <li className="sidebar__nav--link"><AiFillCar /><a href="https://www.booking.com/">CAR RENTAL</a></li>
+        <li className="sidebar__nav--link"><BsMap /><a href="https://www.booking.com/">TOURS</a></li> </ul> 
           <footer className="footer"> &copy; by trillo. All rights reserved</footer>
     </div>
   );

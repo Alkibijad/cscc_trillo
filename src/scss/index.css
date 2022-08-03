@@ -233,7 +233,7 @@ body {
 }
 .sidebar__nav--link {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 1rem 0 1rem 2rem;
   position: relative;
@@ -282,7 +282,7 @@ body {
 }
 .hotel-details .hotel-name-stars {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 .hotel-details .hotel-name-stars > * {
