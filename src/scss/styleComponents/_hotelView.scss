@@ -1,6 +1,6 @@
 .gallery {
     width: 100%;
- 
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     letter-spacing: 1px;
- 
+
 
     .hotel-name-stars {
         display: flex;
@@ -63,7 +63,7 @@
     padding: 5% 3%;
     font-size: 1.6rem;
 
-    .about{
+    .about {
         box-shadow: var(--Shadow-dark);
         padding: 1rem;
         border-radius: 5px;
@@ -72,10 +72,12 @@
     .about p:nth-child(1) {
         margin-bottom: 2rem;
     }
+
     .list {
         padding-top: 10%;
         display: flex;
         flex-wrap: wrap;
+
         &__item {
             flex: 0 0 50%;
             padding: 10px;
@@ -94,12 +96,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    &-user{
+
+    &-user {
         box-shadow: var(--Shadow-dark);
         padding: 1rem;
         border-radius: 5px;
     }
- 
+
 
     .reviews-user__info {
 
@@ -135,7 +138,7 @@
 
 .booking {
     width: 100%;
-  
+
 
     display: flex;
     flex-direction: column;
@@ -156,26 +159,28 @@
             border: none;
             position: relative;
             color: white;
-            & :first-child{
-                transform:  translateY(-3rem);
+
+            & :first-child {
+                transform: translateY(-3rem);
                 opacity: 0;
                 transition: all .3s;
 
             }
-            &:hover :first-child{
-                transform:  translateY(1rem);
+
+            &:hover :first-child {
+                transform: translateY(1rem);
                 transition: all .3s;
                 opacity: 1;
             }
 
-            & :nth-child(2){
-                transform:  translateY(-1rem);
+            & :nth-child(2) {
+                transform: translateY(-1rem);
                 transition: all .3s;
 
             }
 
-            &:hover :nth-child(2){
-                transform:  translateY(3rem);
+            &:hover :nth-child(2) {
+                transform: translateY(3rem);
                 transition: all .3s;
                 opacity: 0;
             }
