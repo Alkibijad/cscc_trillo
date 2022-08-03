@@ -73,8 +73,8 @@ body {
 
 .about_and_rating {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 10rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
 }
 
 @media screen and (max-width: 1400px) {
@@ -101,7 +101,6 @@ body {
     display: none;
   }
   .hotel-details {
-    border: 1px solid red;
     flex-direction: column;
   }
   .hotel-details .hotel-name-stars {
@@ -110,6 +109,41 @@ body {
   .hotel-details .hotel-location-rate {
     align-self: flex-end;
   }
+}
+@media screen and (max-width: 800px) {
+  .App {
+    min-width: 100%;
+  }
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .about_and_rating .ameneties .list {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  #header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+  }
+  .search {
+    order: 1;
+    flex: 0 0 100%;
+  }
+  .about_and_rating {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 440px) {
+  .sidebar .sidebar__nav {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.header {
+  height: 10rem;
 }
 .header .logo {
   height: 3.25rem;
@@ -151,7 +185,6 @@ body {
   outline: none;
 }
 .header .user-nav {
-  width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -186,7 +219,7 @@ body {
 
 .sidebar {
   background-color: var(--Grey-dark-1);
-  height: 100vh;
+  min-height: 100%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -282,8 +315,14 @@ body {
 }
 
 .about_and_rating {
+  background-color: orange;
   padding: 5% 3%;
   font-size: 1.6rem;
+}
+.about_and_rating .about {
+  box-shadow: var(--Shadow-dark);
+  padding: 1rem;
+  border-radius: 5px;
 }
 .about_and_rating .about p:nth-child(1) {
   margin-bottom: 2rem;
@@ -302,10 +341,14 @@ body {
 }
 
 .reviews {
-  height: 62vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+.reviews-user {
+  box-shadow: var(--Shadow-dark);
+  padding: 1rem;
+  border-radius: 5px;
 }
 .reviews .reviews-user__info {
   margin: 5% 0;
@@ -327,4 +370,46 @@ body {
   border-radius: 50%;
   font-size: 3rem;
   text-align: center;
+}
+
+.booking {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.booking_text {
+  width: 60%;
+  text-align: center;
+  color: var(--Primary-dark);
+  font-size: 2rem;
+}
+.booking_text .btn-booking {
+  background-image: linear-gradient(to right bottom, var(--Primary), var(--Primary-dark));
+  margin: 1rem 0;
+  padding: 1.5rem 3.5rem;
+  border-radius: 100px;
+  border: none;
+  position: relative;
+  color: white;
+}
+.booking_text .btn-booking :first-child {
+  transform: translateY(-3rem);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.booking_text .btn-booking:hover :first-child {
+  transform: translateY(1rem);
+  transition: all 0.3s;
+  opacity: 1;
+}
+.booking_text .btn-booking :nth-child(2) {
+  transform: translateY(-1rem);
+  transition: all 0.3s;
+}
+.booking_text .btn-booking:hover :nth-child(2) {
+  transform: translateY(3rem);
+  transition: all 0.3s;
+  opacity: 0;
 }/*# sourceMappingURL=index.css.map */

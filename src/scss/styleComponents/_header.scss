@@ -1,4 +1,5 @@
 .header {
+    height: 10rem;
 
     .logo {
         height: 3.25rem;
@@ -21,7 +22,8 @@
                 outline: none;
                 box-shadow: 0 .5rem 1rem var(--Primary-light)
             }
-            &:focus:invalid{
+
+            &:focus:invalid {
                 border: 1px solid red;
             }
 
@@ -39,6 +41,7 @@
             transition: all 0.3s;
 
         }
+
         &__button:focus {
             color: var(--Primary);
             transform: scale(1.5);
@@ -49,7 +52,7 @@
     }
 
     .user-nav {
-        width: 30%;
+
         display: flex;
         justify-content: space-between;
         align-items: center;

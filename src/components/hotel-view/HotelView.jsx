@@ -1,5 +1,6 @@
 import React from "react";
 import AboutHotel from "./AboutHotel";
+import Booking from "./Booking";
 import Gallery from "./Gallery";
 import HotelDetails from "./HotelDetails";
 import Review from "./Review";
@@ -15,6 +16,7 @@ function HotelView() {
         <AboutHotel />
         <Review/>
       </div>
+      <Booking/>
     </main>
   );
 }

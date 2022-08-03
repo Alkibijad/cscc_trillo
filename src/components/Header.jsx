@@ -6,7 +6,7 @@ import { BsFillBookmarkFill, BsFillChatLeftTextFill } from "react-icons/bs";
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header" id="header">
 
       <img src={Logo} alt="logo" className="logo" />
       

@@ -13,7 +13,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .content {
@@ -31,6 +30,6 @@
 
 .about_and_rating {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
 }
